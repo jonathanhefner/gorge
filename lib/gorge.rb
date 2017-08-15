@@ -1,5 +1,1 @@
-require "gorge/version"
-
-module Gorge
-  # Your code goes here...
-end
+require_relative "gorge/version"
