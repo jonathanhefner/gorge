@@ -2,6 +2,10 @@ require "test_helper"
 
 class PathnameTest < Minitest::Test
 
+  def test_crc32
+    assert_digest_matches(Digest::CRC32.new){|path| path.file_crc32 }
+  end
+
   def test_md5
     assert_digest_matches(Digest::MD5.new){|path| path.file_md5 }
   end

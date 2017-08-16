@@ -2,6 +2,14 @@ require "pathname"
 
 class Pathname
 
+  # Returns the CRC32 checksum (in hexadecimal format) of the contents
+  # of the file indicated by the Pathname.
+  #
+  # @return [String]
+  def file_crc32
+    Digest::CRC32.file(self).hexdigest
+  end
+
   # Returns the MD5 hash (in hexadecimal format) of the contents of the
   # file indicated by the Pathname.
   #

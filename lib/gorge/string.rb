@@ -1,5 +1,12 @@
 class String
 
+  # Returns the CRC32 checksum (in hexadecimal format) of the String.
+  #
+  # @return [String]
+  def crc32
+    Digest::CRC32.hexdigest(self)
+  end
+
   # Returns the MD5 hash (in hexadecimal format) of the String.
   #
   # @return [String]

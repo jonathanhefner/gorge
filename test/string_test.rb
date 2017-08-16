@@ -2,6 +2,10 @@ require "test_helper"
 
 class StringTest < Minitest::Test
 
+  def test_crc32
+    assert_digest_matches(Digest::CRC32.new){|string| string.crc32 }
+  end
+
   def test_md5
     assert_digest_matches(Digest::MD5.new){|string| string.md5 }
   end
