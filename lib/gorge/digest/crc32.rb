@@ -31,7 +31,7 @@ class Digest::CRC32 < Digest::Class
   #
   # @return [self]
   def update(string)
-    @crc32 = Zlib.crc32_combine(@crc32, Zlib.crc32(string), string.length)
+    @crc32 = Zlib.crc32(string, @crc32)
     self
   end
 
