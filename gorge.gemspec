@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "gorge"
   spec.version       = Gorge::VERSION
   spec.authors       = ["Jonathan Hefner"]
-  spec.email         = ["jonathan.hefner@gmail.com"]
+  spec.email         = ["jonathan@hefner.pro"]
 
   spec.summary       = %q{Convenient access to Ruby's Digest module}
   spec.homepage      = "https://github.com/jonathanhefner/gorge"
