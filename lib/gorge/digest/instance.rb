@@ -1,9 +1,11 @@
 module Digest::Instance
 
   # Updates the Digest using the entire contents of the given IO-like,
-  # and returns the Digest modified.  Seeks to the beginning of the
-  # IO-like before reading, and restores its initial position after
-  # reading.  See also +Digest::Instance#file+.
+  # and returns the Digest.  Before reading, saves the current position
+  # of the IO-like, and seeks to the beginning.  After reading, seeks
+  # back to the saved position.
+  #
+  # @see https://docs.ruby-lang.org/en/master/Digest/Instance.html#method-i-file Digest::Instance#file
   #
   # @param io_like [IO, StringIO, IO-like]
   # @return [self]

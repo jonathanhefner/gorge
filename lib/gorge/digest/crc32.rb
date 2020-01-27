@@ -18,16 +18,14 @@ class Digest::CRC32 < Digest::Class
     4
   end
 
-  # Resets the Digest to its initial state, and returns the Digest
-  # modified.
+  # Resets the Digest to its initial state, and returns the Digest.
   #
   # @return [self]
   def reset
     @crc32 = 0
   end
 
-  # Updates the Digest using the given string, and returns the Digest
-  # modified.
+  # Updates the Digest using the given +string+, and returns the Digest.
   #
   # @return [self]
   def update(string)
