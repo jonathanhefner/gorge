@@ -24,13 +24,13 @@ over the CRC32 functionality provided by Ruby's built-in Zlib module.
 
 ## Installation
 
-Install from [Ruby Gems](https://rubygems.org/gems/gorge):
+Install the [gem](https://rubygems.org/gems/gorge):
 
 ```bash
 $ gem install gorge
 ```
 
-Then require in your Ruby script:
+Then require in your Ruby code:
 
 ```ruby
 require "gorge"
