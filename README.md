@@ -1,4 +1,4 @@
-# gorge [![Build Status](https://travis-ci.org/jonathanhefner/gorge.svg?branch=master)](https://travis-ci.org/jonathanhefner/gorge)
+# gorge
 
 Convenient access to Ruby's Digest module via extensions to Ruby core
 objects.  *gorge* also provides an idiomatic `Digest::CRC32` wrapper
