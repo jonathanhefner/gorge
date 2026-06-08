@@ -13,7 +13,7 @@ module Digest::Instance
     pos = io_like.pos # save position
     io_like.seek(0)
 
-    buffer = ""
+    buffer = +""
     while io_like.read(16384, buffer)
       self.update(buffer)
     end
